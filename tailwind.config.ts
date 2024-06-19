@@ -8,10 +8,17 @@ const config: Config = {
   ],
   theme: {
     extend: {
-      backgroundImage: {
-        "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
-        "gradient-conic":
-          "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
+      screens: {
+        phone: { min: "0px", max: "599px" },
+        tablet: { min: "600px", max: "959px" },
+        laptop: { min: "960px", max: "1279px" },
+        desktop: { min: "1280px", max: "1919px" },
+        fullHd: { min: "1920px" },
+      },
+      colors: {
+        primaryBlue: "#13329E",
+        secondaryBlue: "#3572EF",
+        tertiaryBlue: "#3C87F8",
       },
     },
   },
